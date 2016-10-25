@@ -1,0 +1,221 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>簽到退系統</title>
+
+
+    <link rel="stylesheet" href="../Content/bootstrap.min.css" />
+    <link rel="stylesheet" href="../Styles/sweetalert.css" />
+
+    <!-- HTML5 shim and Respond.js 讓 IE8 支援 HTML5 元素與媒體查詢 -->
+    <!-- 警告：Respond.js 無法在 file:// 協定下運作 -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" href="../custom/1.0/css/default.css" />
+
+    <style>
+    </style>
+</head>
+<body>
+
+        <div class="container">
+            <div class="header">
+                <nav>
+                    <ul class="nav nav-pills pull-right">
+                        <li role="presentation" class="active"><a href="#">自然人憑證</a></li>
+                        <li role="presentation"><a href="./account.html">帳號簽到退</a></li>
+                    </ul>
+                </nav>
+                <h1 class="text-muted">簽到退系統</h1>
+            </div>
+            <div class="jumbotron" id="divTimer">
+                <h3 class="text-left" id="dtD">0000/00/00</h3>
+                <h1 id="dtTime">00:00:00</h1>
+                <h2 id="stateMsg">系統未啟用</h2>
+                <span>
+                    <a class="btn btn-default" id="dutyOn">上班</a>
+                    <a class="btn btn-default" id="dutyOff">下班</a>
+                </span>
+            </div>
+
+
+            <div id="signinLog">
+                <h3>簽到退紀錄</h3>
+                <table class="table" id="tbSignNow">
+                    <tbody>
+                        <tr>
+                            <td>2016/10/19</td>
+                            <td>08:41:00</td>
+                            <td>上班</td>
+                            <td>姓名</td>
+                            <td>失敗</td>
+                        </tr>
+                        <tr>
+                            <td>2016/10/19</td>
+                            <td>08:41:00</td>
+                            <td>上班</td>
+                            <td>姓名</td>
+                            <td>失敗</td>
+                        </tr>
+                        <tr>
+                            <td>2016/10/19</td>
+                            <td>08:41:00</td>
+                            <td>上班</td>
+                            <td>姓名</td>
+                            <td>失敗</td>
+                        </tr>
+                        <tr>
+                            <td>2016/10/19</td>
+                            <td>08:41:00</td>
+                            <td>上班</td>
+                            <td>姓名</td>
+                            <td>失敗</td>
+                        </tr>
+                        <tr>
+                            <td>2016/10/19</td>
+                            <td>08:41:00</td>
+                            <td>上班</td>
+                            <td>姓名</td>
+                            <td>失敗</td>
+                        </tr>
+                        <tr>
+                            <td>2016/10/19</td>
+                            <td>08:41:00</td>
+                            <td>上班</td>
+                            <td>姓名</td>
+                            <td>失敗</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+
+            <div role="tabpanel" id="divMsg">
+
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs" role="tablist">
+                    <li role="presentation" class="active"><a href="#note" aria-controls="note" role="tab" data-toggle="tab">注意事項</a></li>
+                    <li role="presentation"><a href="#sysInfo" aria-controls="sysInfo" role="tab" data-toggle="tab">系統資訊</a></li>
+                    <li role="presentation"><a href="#step" aria-controls="step" role="tab" data-toggle="tab">操作步驟</a></li>
+                    <li role="presentation"><a href="#moica" aria-controls="moica" role="tab" data-toggle="tab">憑證相關</a></li>
+                    <li role="presentation"><a href="#faq" aria-controls="faq" role="tab" data-toggle="tab">聯絡諮詢</a></li>
+                    <li role="presentation"><a href="#test" aria-controls="test" role="tab" data-toggle="tab">測試選項</a></li>
+                </ul>
+
+                <!-- Tab panes -->
+                <div class="tab-content">
+
+                    <div role="tabpanel" class="tab-pane" id="test">
+                        <div>
+                            <ul>
+                                <li>載入 <a class="btn btn-default" id="test10">錯誤</a> / <a class="btn btn-default" id="test11">成功</a></li>
+                                <li>卡片 <a class="btn btn-default" id="test20">失敗</a> / <a class="btn btn-default" id="test21">成功</a></li>
+                                <li>連結失敗 <a class="btn btn-default" id="test30">失敗</a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+
+
+
+                    <div role="tabpanel" class="tab-pane active" id="note">
+
+                        <div>
+                            <p>注意事項注意事項注意事項注意事項注意事項注意事項注意事項注意事項注意事項注意事項注意事項注意事項注意事項注意事項注意事項注意事項注意事項注意事項注意事項注意事項注意事項注意事項注意事項注意事項注意事項</p>
+                            <p>注意事項注意事項注意事項注意事項注意事項注意事項注意事項注意事項注意事項注意事項注意事項注意事項注意事項注意事項注意事項注意事項注意事項注意事項注意事項注意事項注意事項注意事項注意事項注意事項注意事項</p>
+                        </div>
+
+
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="step">
+
+                        <div>
+                            <ol>
+                                <li>請選擇「上班」或「下班」</li>
+                                <li>將自然人憑證 IC 卡插入讀卡機</li>
+                                <li>等待刷卡訊息（約 3-10 秒）</li>
+                                <li>退出卡片</li>
+                            </ol>
+                        </div>
+
+
+                    </div>
+
+                    <div role="tabpanel" class="tab-pane" id="sysInfo">
+                        <div>
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th></th>
+                                        <th>系統物件</th>
+                                        <th>狀態</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Internet Explorer 瀏覽器</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>AcitveX 元件</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>讀卡機</td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                    </div>
+
+
+
+                    <div role="tabpanel" class="tab-pane" id="moica">
+                        <div>
+                            <ul>
+                                <li><a href="#">自然人憑證上傳</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div role="tabpanel" class="tab-pane" id="faq">
+                        <div>
+                            <ul>
+                                <li><a href="#">憑證問題</a></li>
+                                <li><a href="#">刷卡系統操作問題</a></li>
+                                <li><a href="#">查詢簽到退紀錄</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    <script src="../Scripts/jquery-1.9.1.min.js"></script>
+    <script src="../Scripts/bootstrap.min.js"></script>
+    <script src="../Scripts/sweetalert.min.js"></script>
+    <script src="../custom/1.0/js/defaulthtml.js"></script>
+
+
+    <script>
+        $(document).ready(function () {
+            initall();
+        });
+
+    </script>
+
+</body>
+</html>
